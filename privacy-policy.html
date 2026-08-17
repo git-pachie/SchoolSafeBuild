@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - SchoolSafe QR</title>
+  <title>SchoolSafe QR Support</title>
+  <meta name="description" content="Official SchoolSafe QR support page for parents, guardians, teachers, and participating schools." />
+
   <style>
     :root {
-      --primary: #2563eb;
+      --primary: #6c4cf1;
+      --primary-dark: #4e36c9;
       --text: #1f2937;
       --muted: #6b7280;
-      --bg: #f8fafc;
-      --card: #ffffff;
       --border: #e5e7eb;
+      --surface: #ffffff;
+      --background: #f7f7fc;
+      --success-bg: #f1efff;
     }
 
     * {
@@ -21,40 +25,112 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: var(--bg);
+      background: var(--background);
       color: var(--text);
-      line-height: 1.7;
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #6c4cf1 0%, #7b61ff 55%, #9b8cff 100%);
+      color: white;
+      padding: 64px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 40px;
+      line-height: 1.15;
+    }
+
+    .hero p {
+      margin: 0 auto;
+      max-width: 720px;
+      font-size: 18px;
+      opacity: 0.95;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 980px;
       margin: 0 auto;
-      padding: 32px 20px;
+      padding: 40px 20px 60px;
     }
 
     .card {
-      background: var(--card);
+      background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 18px;
-      padding: 36px;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-    }
-
-    h1 {
-      margin-top: 0;
-      color: var(--primary);
-      font-size: 32px;
-      line-height: 1.2;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 30px rgba(31, 41, 55, 0.05);
     }
 
     h2 {
-      margin-top: 32px;
-      font-size: 22px;
+      margin-top: 0;
+      font-size: 26px;
       color: var(--text);
     }
 
+    h3 {
+      margin-bottom: 8px;
+      font-size: 19px;
+    }
+
     p {
-      margin: 12px 0;
+      margin-top: 8px;
+    }
+
+    .contact-box {
+      background: var(--success-bg);
+      border-radius: 14px;
+      padding: 22px;
+      margin-top: 16px;
+    }
+
+    .contact-email {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    .contact-email:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 13px 22px;
+      border-radius: 10px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: var(--primary-dark);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .topic {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      background: #fcfcff;
+    }
+
+    .topic h3 {
+      margin-top: 0;
     }
 
     ul {
@@ -65,180 +141,311 @@
       margin-bottom: 8px;
     }
 
-    .updated {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 28px;
-    }
-
-    .footer {
-      margin-top: 32px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    a {
-      color: var(--primary);
+    .links a {
+      color: var(--primary-dark);
+      font-weight: 600;
       text-decoration: none;
     }
 
-    a:hover {
+    .links a:hover {
       text-decoration: underline;
     }
 
-    @media (max-width: 600px) {
+    .note {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 0 20px 40px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        padding: 48px 20px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
       .card {
-        padding: 24px;
-      }
-
-      h1 {
-        font-size: 26px;
-      }
-
-      h2 {
-        font-size: 20px;
+        padding: 22px;
       }
     }
   </style>
 </head>
+
 <body>
+
+  <section class="hero">
+    <h1>SchoolSafe QR Support</h1>
+    <p>
+      Need help with SchoolSafe QR? Our support team is available to assist
+      parents, guardians, teachers, and participating schools with account,
+      student, QR, attendance, notification, and technical concerns.
+    </p>
+  </section>
+
   <main class="container">
+
     <section class="card">
-      <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: August 1, 2026</p>
+      <h2>Contact Support</h2>
 
       <p>
-        This Privacy Policy explains how <strong>SchoolSafe QR</strong> collects, uses, stores,
-        and protects information when users access or use our student QR check-in and notification
-        application.
+        If you have a question, need technical assistance, or would like to
+        report an issue with SchoolSafe QR, please contact our support team.
       </p>
 
-      <p>
-        By using SchoolSafe QR, you agree to the collection and use of information in accordance
-        with this Privacy Policy.
-      </p>
+      <div class="contact-box">
+        <strong>Email Support</strong><br />
 
-      <h2>1. Information We Collect</h2>
-      <p>
-        SchoolSafe QR may collect the following types of information depending on the user role
-        and app usage:
-      </p>
-      <ul>
-        <li>Parent or guardian name</li>
-        <li>Email address and mobile number</li>
-        <li>Student name and school-related information</li>
-        <li>Student LRN or school identifier used for verification</li>
-        <li>QR check-in and check-out records</li>
-        <li>Notification records</li>
-        <li>Device information required for app security and troubleshooting</li>
-      </ul>
+        <a
+          class="contact-email"
+          href="mailto:support@schoolsafeqr.com?subject=SchoolSafe%20QR%20Support%20Request">
+          support@schoolsafeqr.com
+        </a>
 
-      <h2>2. How We Use Information</h2>
-      <p>
-        We use collected information to provide and improve the SchoolSafe QR service, including:
-      </p>
-      <ul>
-        <li>Verifying parent or guardian accounts</li>
-        <li>Linking students to authorized parents or guardians</li>
-        <li>Generating secure QR codes for student check-in and check-out</li>
-        <li>Recording school entry and exit scan logs</li>
-        <li>Sending check-in and check-out notifications to parents or guardians</li>
-        <li>Supporting school administration, reports, and audit logs</li>
-        <li>Improving app reliability, security, and user experience</li>
-      </ul>
-
-      <h2>3. Student Information</h2>
-      <p>
-        Student information is used only for school attendance confirmation, parent notification,
-        verification, reporting, and security purposes. We do not sell student information to third
-        parties.
-      </p>
-
-      <h2>4. QR Code Security</h2>
-      <p>
-        SchoolSafe QR does not require the QR code to expose raw sensitive student information.
-        QR codes should use secure tokens that are validated by the backend system. These tokens
-        are used to identify the student record securely during check-in and check-out.
-      </p>
-
-      <h2>5. Data Sharing</h2>
-      <p>
-        We do not sell, rent, or trade personal information. Information may only be shared with:
-      </p>
-      <ul>
-        <li>The school or institution responsible for the student record</li>
-        <li>Authorized parents or guardians linked to the student</li>
-        <li>Service providers needed to operate notifications, hosting, or technical support</li>
-        <li>Authorities if required by law or legal process</li>
-      </ul>
-
-      <h2>6. Data Storage and Protection</h2>
-      <p>
-        We take reasonable technical and organizational measures to protect user and student data
-        from unauthorized access, loss, misuse, alteration, or disclosure.
-      </p>
-      <p>
-        However, no method of electronic storage or transmission over the internet is completely
-        secure. While we work to protect your information, we cannot guarantee absolute security.
-      </p>
-
-      <h2>7. User Accounts and Access</h2>
-      <p>
-        Users are responsible for keeping their login credentials secure. Parents, guardians,
-        school staff, and administrators should not share their accounts with unauthorized users.
-      </p>
-
-      <h2>8. Data Retention</h2>
-      <p>
-        We retain personal, student, scan, and notification records only for as long as necessary
-        to provide the service, comply with school requirements, resolve disputes, maintain audit
-        logs, or comply with applicable laws.
-      </p>
-
-      <h2>9. Children’s Privacy</h2>
-      <p>
-        SchoolSafe QR is designed to be used by schools and authorized parents or guardians.
-        Student information should only be provided by authorized school personnel or verified
-        parents or guardians.
-      </p>
-
-      <h2>10. User Rights</h2>
-      <p>
-        Depending on applicable laws and school policies, users may request to access, update,
-        correct, or delete their personal information. Requests may be subject to identity
-        verification and school approval where student records are involved.
-      </p>
-
-      <h2>11. Third-Party Services</h2>
-      <p>
-        The app may use third-party services for hosting, analytics, push notifications, SMS,
-        email delivery, or error monitoring. These third-party services may process limited data
-        only as needed to support the app’s functionality.
-      </p>
-
-      <h2>12. Changes to This Privacy Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. Any changes will be posted on this
-        page with an updated “Last updated” date.
-      </p>
-
-      <h2>13. Contact Us</h2>
-      <p>
-        If you have questions or concerns about this Privacy Policy, please contact us:
-      </p>
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:support@schoolsafe.com">support@schoolsafe.com</a>
-      </p>
-
-      <div class="footer">
         <p>
-          © 2026 SchoolSafe QR. All rights reserved.
+          You can contact us regarding account access, student information,
+          QR codes, check-in/check-out records, alerts, notifications,
+          account deletion, privacy concerns, or other SchoolSafe QR issues.
         </p>
+
+        <a
+          class="button"
+          href="mailto:support@schoolsafeqr.com?subject=SchoolSafe%20QR%20Support%20Request">
+          Contact Support
+        </a>
       </div>
     </section>
+
+
+    <section class="card">
+      <h2>How We Can Help</h2>
+
+      <div class="grid">
+
+        <div class="topic">
+          <h3>Account & Login</h3>
+          <p>
+            Help with signing in, account access, password-related concerns,
+            profile information, and account settings.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Parent & Guardian Accounts</h3>
+          <p>
+            Assistance with parent or guardian accounts, linked children,
+            student information, and available family features.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Teacher Accounts</h3>
+          <p>
+            Help with teacher access, assigned students, attendance,
+            student details, alerts, and teacher profile features.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Student QR Codes</h3>
+          <p>
+            Assistance with student QR codes and QR-based school
+            check-in and check-out functionality.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Check-In & Check-Out</h3>
+          <p>
+            Questions about student check-in or check-out status,
+            scan history, recorded times, or attendance-related activity.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Alerts & Notifications</h3>
+          <p>
+            Help with school alerts, acknowledgements, emergency notices,
+            push notifications, and notification preferences.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>School News & Events</h3>
+          <p>
+            Questions regarding school announcements, activities,
+            events, achievements, or published school updates.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Technical Issues</h3>
+          <p>
+            Report unexpected errors, display problems, app crashes,
+            performance issues, or other technical concerns.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="card">
+      <h2>Account Deletion Support</h2>
+
+      <p>
+        Eligible Parent/Guardian users can permanently delete their
+        SchoolSafe QR account directly within the application.
+      </p>
+
+      <p>
+        To access the account deletion feature:
+      </p>
+
+      <ol>
+        <li>Sign in to SchoolSafe QR.</li>
+        <li>Open <strong>Profile</strong>.</li>
+        <li>Select <strong>Account Settings</strong>.</li>
+        <li>Select <strong>Delete Account</strong>.</li>
+        <li>Review the deletion information.</li>
+        <li>Select <strong>Delete My Account</strong>.</li>
+        <li>Confirm permanent account deletion.</li>
+      </ol>
+
+      <p>
+        After successful deletion, applicable account-specific personal
+        information is deleted or anonymized, authentication credentials
+        and active sessions are revoked, notification/device tokens are
+        removed, and the user is signed out.
+      </p>
+
+      <p>
+        Certain school records, such as student attendance,
+        check-in/check-out history, QR scan activity, safety records,
+        and applicable audit records, may be retained where necessary
+        for legitimate school operations, safeguarding, security,
+        legal requirements, or records-retention obligations.
+      </p>
+
+      <p>
+        If you are unable to access the in-app deletion feature or need
+        assistance with your deletion request, contact:
+      </p>
+
+      <a
+        class="contact-email"
+        href="mailto:support@schoolsafeqr.com?subject=SchoolSafe%20QR%20Account%20Deletion%20Assistance">
+        support@schoolsafeqr.com
+      </a>
+    </section>
+
+
+    <section class="card">
+      <h2>Before Contacting Support</h2>
+
+      <p>
+        To help us understand and resolve your issue, please include the
+        following information when applicable:
+      </p>
+
+      <ul>
+        <li>Your name</li>
+        <li>Your registered email address</li>
+        <li>Your school name</li>
+        <li>Your account role: Parent/Guardian, Teacher, or School User</li>
+        <li>A clear description of the issue</li>
+        <li>The steps you performed before the problem occurred</li>
+        <li>A screenshot of the issue, if appropriate</li>
+        <li>Your device model and operating system version, if relevant</li>
+      </ul>
+
+      <p class="note">
+        Please do not send your password, authentication code, or other
+        security credentials by email.
+      </p>
+    </section>
+
+
+    <section class="card">
+      <h2>Privacy & User Information</h2>
+
+      <p>
+        SchoolSafe QR takes the privacy and security of user and student
+        information seriously. Personal information is handled according
+        to the applicable SchoolSafe QR privacy policy and participating
+        school's policies and requirements.
+      </p>
+
+      <p>
+        For privacy-related questions, data concerns, or questions about
+        account deletion, contact:
+      </p>
+
+      <a
+        class="contact-email"
+        href="mailto:support@schoolsafeqr.com?subject=SchoolSafe%20QR%20Privacy%20Question">
+        support@schoolsafeqr.com
+      </a>
+    </section>
+
+
+    <section class="card links">
+      <h2>Helpful Links</h2>
+
+      <p>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </p>
+
+      <p>
+        <a href="delete-account.html">Account Deletion Information</a>
+      </p>
+
+      <p>
+        <a href="mailto:support@schoolsafeqr.com">
+          Contact SchoolSafe QR Support
+        </a>
+      </p>
+    </section>
+
+
+    <section class="card">
+      <h2>About SchoolSafe QR</h2>
+
+      <p>
+        SchoolSafe QR is designed for participating schools and their
+        authorized parents, guardians, teachers, and school personnel.
+      </p>
+
+      <p>
+        The application provides features including student QR-based
+        check-in and check-out, attendance information, scan history,
+        school alerts, acknowledgements, school news and events,
+        student information, and account management.
+      </p>
+
+      <p>
+        Available functionality may vary depending on the user's role,
+        participating school, school configuration, and enabled services.
+      </p>
+    </section>
+
   </main>
+
+  <footer>
+    © 2026 SchoolSafe QR. All rights reserved.<br />
+    Support: support@schoolsafeqr.com
+  </footer>
+
 </body>
 </html>
